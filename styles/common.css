@@ -60,3 +60,17 @@
     margin-top: 18px;
     cursor: pointer;
 }
+
+.signin-footer {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 15px;
+}
+.signin-footer a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signin-footer a:hover {
+    text-decoration: underline;
+}

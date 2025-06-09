@@ -7,7 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <!-- Ubuntu Mono -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">   
-   <link rel="stylesheet" href="./styles/common.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./scripts/common.js"></script>
     <script src="./scripts/index.js"></script>
@@ -44,7 +45,25 @@
             <label for="signup-confirm">Confirm Password</label>
             <input type="password" id="signup-confirm" placeholder="Re-enter your password" required>
             <button type="submit" class="signup-submit">Sign Up</button>
+        
         </form>
+    </div>
+</div>
+
+<div id="signin-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-signin"><i class="fa fa-times"></i></span>
+        <h2>Welcome Back!</h2>
+        <form id="signin-form">
+            <label for="signin-username">Username</label>
+            <input type="text" id="signin-username" placeholder="Enter your username" required>
+            <label for="signin-password">Password</label>
+            <input type="password" id="signin-password" placeholder="Enter your password" required>
+            <button type="submit" class="signup-submit">Sign In</button>
+        </form>
+        <div class="signin-footer">
+            Not a member? <a href="#" id="show-signup">Sign Up</a>
+        </div>
     </div>
 </div>
 
