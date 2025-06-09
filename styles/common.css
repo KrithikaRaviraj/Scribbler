@@ -4,19 +4,28 @@
     z-index: 1000;
     left: 0; top: 0; width: 100vw; height: 100vh;
     background: rgba(0,0,0,0.7);
+    /* Use flex to center content */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center modal content for all modals */
+.modal[style*="block"] {
+    display: flex !important;
 }
 
 .modal-content {
     background: #fff;
-    margin: 0 auto;
-    padding: 30px 40px 30px 40px;
     border-radius: 4px;
-    width: 350px;
-    position: absolute;
-    left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    padding: 30px 40px;
+    width: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 .close {
     position: absolute;
@@ -48,6 +57,9 @@
     font-size: 15px;
     border-radius: 2px;
 }
+.modal-content textarea{
+    width: 100%;
+}
 
 .signup-submit {
     width: 100%;
@@ -75,23 +87,37 @@
     text-decoration: underline;
 }
 
-/* Modal styles already present, just add for textarea and create button */
+.createpost-content {
+    width: 85vw;
+    max-width: 1200px;
+    min-width: 320px;
+    min-height: 500px;
+    padding: 30px 30px 40px 30px;
+}
+.createpost-content input,
 .createpost-content textarea {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    border: none;
-    background: #f2f2f2;
-    font-size: 15px;
-    border-radius: 2px;
-    resize: vertical;
-    min-height: 200px;
+    box-sizing: border-box;
 }
 
+.createpost-content form {
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    font-size: 22px;
+    color: #888;
+    cursor: pointer;
+}
+
+/* Center the Create button in Create Post modal */
 .create-btn {
     width: 150px;
     display: block;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     background: #4CAF50;
     color: #fff;
     border: none;
