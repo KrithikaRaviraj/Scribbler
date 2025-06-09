@@ -3,86 +3,27 @@
 
 <head>
     <title>ScriBBler</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Font (e.g., Pacifico for fun look) -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+    <!--Montez  -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <!-- Ubuntu Mono -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">   
+   <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('./images/background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .logo {
-            font-family: 'Pacifico', cursive;
-            font-size: 32px;
-            color: blue;
-        }
-
-        .tagline {
-            font-size: 14px;
-            color: black;
-            margin-top: 10px;
-            margin-left: 10px;
-        }
-
-        .header-left {
-            display: flex;
-            flex-direction: column;
-            line-height: 1;
-        }
-
-        .header-right button {
-            background-color: blue;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin-left: 10px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .main-buttons {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .main-buttons button {
-            background-color: #f4d03f;
-            padding: 12px 24px;
-            margin: 10px;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            box-shadow: 2px 2px 5px #555;
-        }
-    </style>
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/index.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-left">
-            <div class="logo">ScriBBler</div>
-            <div class="tagline">Explore, Imagine, Create</div>
-        </div>
-        <div class="header-right">
-            <button>Sign Up</button>
-            <button>Sign In</button>
-        </div>
-    </div>
+   <div id="header">
+  <div id="header-left">
+    <div id="logo">ScriBBler</div>
+    <div id="tagline">Explore, Imagine, Create</div>
+  </div>
+  <div id="header-right">
+    <button id="signup-btn">Sign Up</button>
+    <button id="signin-btn">Sign In</button>
+  </div>
+</div>
 
     <div class="main-buttons">
         <button onclick="location.href='./html/postslist.html'">All Posts</button>
