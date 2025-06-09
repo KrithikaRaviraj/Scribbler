@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-buttons .btn {
+    margin-left: 10px;
+    padding: 8px 14px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.banner .btn.large {
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #000;
+}
