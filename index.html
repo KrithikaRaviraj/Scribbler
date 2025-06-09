@@ -27,9 +27,9 @@
 </div>
 
     <div class="main-buttons">
-        <button onclick="location.href='./html/postslist.html'">All Posts</button>
-        <button>Create Post</button>
-    </div>
+    <button id="allposts-btn">All Posts</button>
+    <button id="createpost-btn">Create Post</button>
+</div>
    
 <div id="signup-modal" class="modal">
     <div class="modal-content">
@@ -64,6 +64,20 @@
         <div class="signin-footer">
             Not a member? <a href="#" id="show-signup">Sign Up</a>
         </div>
+    </div>
+</div>
+
+<div id="createpost-modal" class="modal">
+    <div class="modal-content createpost-content">
+        <span class="close" id="close-createpost"><i class="fa fa-times"></i></span>
+        <h2>Pen Your Post</h2>
+        <form id="createpost-form">
+            <label for="post-title">Title</label>
+            <input type="text" id="post-title" placeholder="Enter title of your post" required>
+            <label for="post-content">Contents</label>
+            <textarea id="post-content" placeholder="Enter the contents of your post" rows="10" required></textarea>
+            <button type="submit" class="create-btn">Create</button>
+        </form>
     </div>
 </div>
 

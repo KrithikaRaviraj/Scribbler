@@ -33,4 +33,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // Prevent form submission for both modals
     document.getElementById('signup-form').onsubmit = function(e) { e.preventDefault(); };
     document.getElementById('signin-form').onsubmit = function(e) { e.preventDefault(); };
+
+// All Posts button navigation
+    document.getElementById('allposts-btn').onclick = function() {
+        window.location.href = './html/postslist.html';
+    };
+
+    // Create Post modal logic
+    document.getElementById('createpost-btn').onclick = function() {
+        document.getElementById('createpost-modal').style.display = 'block';
+    };
+    document.getElementById('close-createpost').onclick = function() {
+        document.getElementById('createpost-modal').style.display = 'none';
+    };
+    window.onclick = function(event) {
+        var modal = document.getElementById('createpost-modal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+              }
+        // Also handle other modals if needed
+        var signupModal = document.getElementById('signup-modal');
+        var signinModal = document.getElementById('signin-modal');
+        if (event.target === signupModal) signupModal.style.display = 'none';
+        if (event.target === signinModal) signinModal.style.display = 'none';
+    };
+
+    // Prevent form submission for Create Post
+    document.getElementById('createpost-form').onsubmit = function(e) { e.preventDefault(); };
 });
