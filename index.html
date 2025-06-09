@@ -29,5 +29,24 @@
         <button onclick="location.href='./html/postslist.html'">All Posts</button>
         <button>Create Post</button>
     </div>
+   
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-signup">&times;</span>
+        <h2>Get Started</h2>
+        <form id="signup-form">
+            <label for="signup-name">Name</label>
+            <input type="text" id="signup-name" placeholder="Enter your name" required>
+            <label for="signup-username">Username</label>
+            <input type="text" id="signup-username" placeholder="Enter your username" required>
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="Enter your password" required>
+            <label for="signup-confirm">Confirm Password</label>
+            <input type="password" id="signup-confirm" placeholder="Re-enter your password" required>
+            <button type="submit" class="signup-submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
