@@ -70,8 +70,9 @@ body {
 }
 
 .post-card:hover {
-    box-shadow: 0 8px 32px #bfae9e;
+    box-shadow: 0 8px 32px #e7b6b6;
 }
+
 
 .post-author {
     background: #fff;
