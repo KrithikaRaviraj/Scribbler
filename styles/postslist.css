@@ -100,7 +100,9 @@ body {
     border-bottom-right-radius: 18px;
     padding: 18px 18px 14px 18px;
     min-width: 0;
+    position: relative;
 }
+
 
 .post-title-row {
     display: flex;
@@ -146,7 +148,7 @@ body {
     text-overflow: ellipsis;
     height: 3.9em; /* 3 lines */
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 18px; /* Space for ellipsis icon */
     padding: 0;
 }
 
@@ -158,6 +160,7 @@ body {
     cursor: pointer;
     font-size: 18px;
     transition: color 0.2s;
+    /*spacing is handled by .post-content*/
 }
 .icon.ellipsis:hover {
     color: #222;
