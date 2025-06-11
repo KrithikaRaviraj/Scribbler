@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Optional: close modal on outside click
+    // close modal on outside click
     window.onclick = function(event) {
         if (event.target === deleteModal) {
             deleteModal.style.display = 'none';
