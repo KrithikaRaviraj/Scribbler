@@ -108,7 +108,7 @@
     white-space: pre-line;
 }
 .editable {
-    border: 2px solid #e75480 !important; /* pink border */
+    border: 2px solid #e75480 !important; /* red border */
     outline: none;
 }
 
@@ -134,7 +134,6 @@
 .save-btn:hover {
     background: #b71c4a;
 }
-/* ...existing code... */
 
 .like-section {
    margin-top: 20px;
@@ -170,7 +169,7 @@
     color: #444;
     font-size: 1em;
 }
-/* ...existing code... */
+
 .comment-section {
     margin-top: 30px;
     margin-left: 10px;
