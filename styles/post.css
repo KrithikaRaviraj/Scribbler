@@ -1,0 +1,109 @@
+/* Header styles */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+
+#header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#logo {
+    font-family: 'Montez', cursive;
+    font-size: 2.5em;
+    color: #0000ee;
+    margin-bottom: 0;
+}
+
+#tagline {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    color: #4b0082;
+    margin-top: 0;
+}
+
+#header-right {
+    display: flex;
+    gap: 20px;
+}
+
+#header-right button {
+    background: #0000ff;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    padding: 10px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#header-right button:hover {
+    background: #3333ff;
+}
+
+
+.post-container {
+    max-width: 90vw;
+    margin: 40px auto 0 auto;
+    padding: 0 2vw;
+}
+
+.post-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-author {
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 1.3em;
+    color: #222;
+    margin-left: 5px;
+}
+
+.edit-btn {
+    background: #d72660;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 18px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background 0.2s;
+}
+
+.edit-btn:hover {
+    background: #b71c4a;
+}
+
+.post-title {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 0 0 18px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-content {
+    text-align: center;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    white-space: pre-line;
+}
