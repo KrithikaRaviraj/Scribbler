@@ -137,32 +137,109 @@
 /* ...existing code... */
 
 .like-section {
-    text-align: center;
-    margin-top: 20px;
+   margin-top: 20px;
+    margin-left: 10px;
+    text-align: left;
 }
 
 .like-btn {
-    background: #008cba;
+   background: #f5295c;
     color: #fff;
     border: none;
-    border-radius: 3px;
-    padding: 10px 28px;
+    border-radius: 2px;
+    padding: 12px 28px;
     font-size: 1em;
     cursor: pointer;
     font-family: inherit;
     display: inline-flex;
     align-items: center;
     gap: 7px;
+    font-weight: 500;
+    box-shadow: 0 4px 16px 0 #f5295c22;
     transition: background 0.2s;
 }
 
 .like-btn:hover {
-    background: #005f73;
+    background: #d72660;
 }
 
 .like-msg {
-    margin-top: 10px;
-    font-family: 'Ubuntu Mono', monospace;
-    color: #d72660;
+    margin-top: 18px;
+    margin-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
     font-size: 1em;
+}
+/* ...existing code... */
+.comment-section {
+    margin-top: 30px;
+    margin-left: 10px;
+    max-width: 90vw;
+}
+
+.comment-input {
+    width: 70%;
+    min-height: 70px;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    resize: vertical;
+    display: block;
+}
+
+.comment-btn {
+    background: #f5295c;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 28px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: inherit;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px 0 #f5295c22;
+    transition: background 0.2s;
+    display: block;
+}
+
+.comment-btn:hover {
+    background: #d72660;
+}
+
+.comments-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.all-comments {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 2px;
+    min-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #222;
+    margin-bottom: 30px;
+}
+/* Style for the All Comments section */
+#all-comments {
+    background: #e3e5e7;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Style for each individual comment */
+.comment {
+    background: #fff;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
 }

@@ -42,4 +42,21 @@ document.addEventListener('DOMContentLoaded', function () {
             likeMsg.textContent = `${likeCount} person likes this!`;
         }
     });
+
+
+    // Comment functionality
+    const commentBtn = document.getElementById('comment-btn');
+    const commentInput = document.getElementById('comment-input');
+    const allComments = document.getElementById('all-comments');
+
+    commentBtn.addEventListener('click', function () {
+        const commentText = commentInput.value.trim();
+        if (commentText) {
+            const commentDiv = document.createElement('div');
+            commentDiv.textContent = commentText;
+             commentDiv.className = 'comment';
+            allComments.prepend(commentDiv);
+            commentInput.value = '';
+        }
+    });
 });
