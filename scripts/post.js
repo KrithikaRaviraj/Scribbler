@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Edit/Save functionality
     const editBtn = document.getElementById('edit-post-btn');
     const postTitle = document.getElementById('post-title');
     const postContent = document.getElementById('post-content');
-
     let isEditing = false;
 
     editBtn.addEventListener('click', function () {
         if (!isEditing) {
-            // Switch to edit mode
             isEditing = true;
             postTitle.contentEditable = "true";
             postContent.contentEditable = "true";
@@ -16,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
             editBtn.innerHTML = 'Save <i class="fa fa-save"></i>';
             editBtn.classList.remove('edit-btn');
             editBtn.classList.add('save-btn');
+            postTitle.focus();
         } else {
-            // Save changes
             isEditing = false;
             postTitle.contentEditable = "false";
             postContent.contentEditable = "false";
@@ -26,6 +25,21 @@ document.addEventListener('DOMContentLoaded', function () {
             editBtn.innerHTML = 'Edit <i class="fa fa-edit"></i>';
             editBtn.classList.remove('save-btn');
             editBtn.classList.add('edit-btn');
+        }
+    });
+
+    // Like button functionality
+    const likeBtn = document.getElementById('like-btn');
+    const likeMsg = document.getElementById('like-msg');
+    let likeCount = 0;
+
+    likeBtn.addEventListener('click', function () {
+        likeCount++;
+        likeBtn.innerHTML = '<i class="fa fa-thumbs-up"></i> Liked!';
+        if (likeCount === 1) {
+            likeMsg.textContent = '1 person likes this!';
+        } else {
+            likeMsg.textContent = `${likeCount} person likes this!`;
         }
     });
 });

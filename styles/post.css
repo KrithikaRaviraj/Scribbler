@@ -134,3 +134,35 @@
 .save-btn:hover {
     background: #b71c4a;
 }
+/* ...existing code... */
+
+.like-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.like-btn {
+    background: #008cba;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 28px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    transition: background 0.2s;
+}
+
+.like-btn:hover {
+    background: #005f73;
+}
+
+.like-msg {
+    margin-top: 10px;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #d72660;
+    font-size: 1em;
+}
