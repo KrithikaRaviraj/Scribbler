@@ -20,24 +20,22 @@ body {
 
 #tagline {
     font-size: 14px;
-    color: #222;
+    color: #4b0082;
     margin-top: 0px;
     margin-left: 2px;
     font-family: 'Ubuntu Mono', monospace;
 }
 
 #header-right button {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 10px 28px;
-    margin-left: 16px;
+    background: #0000ff;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    padding: 10px 25px;
+    font-size: 1em;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 3px;
+    transition: background 0.2s;
 }
-
 .post-list {
     display: grid;
     grid-template-columns: repeat(2, 540px);
@@ -47,11 +45,8 @@ body {
     max-width: 1200px;
 }
 
-@media (max-width: 1200px) {
-    .post-list {
-        grid-template-columns: 1fr;
-        max-width: 600px;
-    }
+#header-right button:hover {
+    background: #3333ff;
 }
 
 .post-card {

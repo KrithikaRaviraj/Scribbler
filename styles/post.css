@@ -16,14 +16,14 @@
 
 #logo {
     font-family: 'Montez', cursive;
-    font-size: 2.5em;
+    font-size:32px;
     color: #0000ee;
     margin-bottom: 0;
 }
 
 #tagline {
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 1em;
+    font-size: 14px;
     color: #4b0082;
     margin-top: 0;
 }
@@ -63,7 +63,7 @@
 }
 
 .post-author {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 1.3em;
     color: #222;
     margin-left: 5px;
@@ -106,4 +106,31 @@
     border-radius: 2px;
     margin-bottom: 40px;
     white-space: pre-line;
+}
+.editable {
+    border: 2px solid #e75480 !important; /* pink border */
+    outline: none;
+}
+
+.edit-btn, .save-btn {
+    background: #d72660;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 18px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background 0.2s;
+}
+
+.save-btn {
+    background: #d72660;
+}
+
+.save-btn:hover {
+    background: #b71c4a;
 }
